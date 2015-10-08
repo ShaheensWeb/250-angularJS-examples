@@ -1,17 +1,16 @@
-<html ng-app>
-	<head>
-	    <meta charset="utf-8">
-		<title>Angular.JS - ShaheensWeb - Example #1</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<html ng-app> <!-- let html know "HEY!" this is a angular app ok? Be ready.. -->
+	<head> 
+	    <meta charset="utf-8"> 
+	    <title>Angular.JS - ShaheensWeb - Example #1</title>
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script> <!-- import angular -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> <!-- import BS -->
 	</head>
 	<body>
-	 <div class="container">
-	    What's your favorite color:<input ng-model="favColor" type="text"/>
-	    <br/>
-	    Your favorite color is: {{favColor}}
-    </div> <!-- /container -->
-	    <br>
+		<div class="container"> <!-- some bootstrap styling --> 
+	    	What's your favorite color:<input ng-model="favColor" type="text"/> <!-- Bind an input using input and ng-model -->
+	    	<br/>  <!-- line break for styling purposes -->
+	    	Your favorite color is: {{favColor}} <!-- log the user the input from the text field -->
+    	</div>
 	</body>
 </html>
 
