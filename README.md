@@ -105,7 +105,8 @@ This repo commenced mid Oct 2015, all creation done by [Shaheen Ghazazani](http:
 	* Covers basics of ng-init, ng-repeat. 
  * [Example 3](https://github.com/ShaheensWeb/250-angularJS-examples/blob/master/example3/index-example3.html)
  	* Covers ng-init, ng-repeat, and filtering via user input.
- * [Example 4]()
+ * [Example 4](https://github.com/ShaheensWeb/250-angularJS-examples/tree/master/example4)
+ 	* Covers basics of modularity, modules, controllers, and $scope.
  * [Example 5]()
  * [Example 6]()
  * [Example 7]()
