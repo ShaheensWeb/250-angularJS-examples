@@ -66,7 +66,29 @@ Inspired by [Curran Kelleher](https://github.com/curran/portfolio) repository wi
 </body>
 </html>
  ```
+## MVC Framework 
+  * MVC is a framework thats top priority is seperating the presentation logic(the front end), from the business/data logic(the back end). So from this perspective its biggest advantage is that two people could be working simultaneously one on the back end, one on the front end without ever clashing with each other. MVC is extremely popular among web applications and divides a given application into three interconnected parts(as you might have guessed) the Model, the View, the Controller. 
+  	* <b>The controller</b>: sends commands to the model to update the models state. It can also send commands to its associated view to change the views presentation. <br/>
+  	* <b>The model</b>: stores data that is retrieved according to commands invoked from the controller that become displayed in the view. <br/>
+  	* <b>The view</b>: generates the output and presentation to the user based on changes from the model. 
+	* Here is a image representation of the MVC framework: <br/> 
+![MVC Image](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/500px-MVC-Process.svg.png)
+
+## Why should I use AngularJS over MVC:
+  * MVW (known as model, view, whatever) is what many people consider AngularJS to be. Angular has this thing called a "scope" and it acts a "ViewModel" in the sense that it is the glue between the controller, and the view. We access the scope object by creating a controller and injecting "$scope" via dependency injection. Note you will be seeing lots of ($varNames) that are built in Angular.JS tools like $routeProvider, $locals, $scope, and etc. 
  
+## Declaring Modules in Angular, and abusing how modular of a language AngularJS really is.
+ * Modules are an amazing way to organize your code. In general the examples 1-3 show a style of angular using a single .html file with everything built into that one page. This is not the appropriate style of scaling your coding. You should have a parent directory containing a single index.html with organized js/css/view/controllers/services/ etc. 
+ * Using the strength of the AngularJS modules we have access to all of the following functionality:
+![Module Image](http://i.imgur.com/lYpNFOG.png)
+ * Using the above Framework from Dan Wahlins 60 minute youtube [lecture](https://www.youtube.com/watch?v=i9MHigUZKEM) on Angular(slightly old now) you can see clearly that organizing your code like this will allow you to scale and build modular web applications abusing the strengths of AngularJS. 
+```javascript
+var helloWorldApp = angular.module('demoApp', []) 
+```
+## The Empty Array in Module Declaration
+  * When declaring a module such as angular.module('moduleName', [ ]) this array shown (aka the second parameter) is known as dependency injection. This is because your module may require other modules to get data (very popular in large scale applications). An example of this would be angular.module('catModule', ['catFeedingScheduleModule']); In this case we are using dependency injection to feed catModule the catFeedingScheduleModule. 
+  * Dependency injection is a way to 
+  
 ## Goals of this repo:
   * Write atleast 250 basic angular.JS apps covering the fundementals, basics, and even some intermediate code snippets.
   * Cover basic keywords associated with Angular.JS (scope, controllers, imports, etc)
