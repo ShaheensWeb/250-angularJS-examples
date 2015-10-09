@@ -1,5 +1,8 @@
 Inspired by [Curran Kelleher](https://github.com/curran/portfolio) repository with over 1500+ stars featuring 50 well made Angular.JS examples and lecture videos I thought I would develop my own repository consisting of what I would consider the basics of Angular.JS and cover it via examples and a well developed github repo.
 
+## Important Links
+  * [Angular.JS Api Reference](https://docs.angularjs.org/api)
+
 ## Single Page Applications (SPA)
  * Load the initial content upfront, and the different views(commonly referred to as mini-web pages) can be loaded on the fly(when required) and loaded into the web page.
  * Challenges with dealing SPA: 
@@ -41,6 +44,7 @@ Inspired by [Curran Kelleher](https://github.com/curran/portfolio) repository wi
  	* ng-model="var": A way to bind a variable to a value. In the HTML code snippet above we are using ng-model to bind the value given from the text input to a "favColor" variable. This variable then gets returned in real time via data-binding to {{favColor}}. 
  	* ng-init="Class=['sean', 'james', 'alex', 'daihee']": A way to bind values and hard declare them. 
  	* ng-repeat="people in Class": The main method of iteration in AngularJS. This would allow us to go through the previously declared array of strings and log each name using {{people}}. 
+  * Filters: A way to filter inputs given via ng-repeat. "people in class | filter: userInput | orderBy: name". Filter takes into consideration what the user may be typing, orderBy deals with the order the object gets returned in. There are many examples of different built in filters, you can even build your own filters. 
 ```html
 <!DOCTYPE html>
 <html ng-app> 

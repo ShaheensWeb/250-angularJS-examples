@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Angular.JS - ShaheensWeb - Example #3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+</head>
+<body ng-init="class=['Sean Ghazazani', 'James Mcconnell', 'Daihee Kim', 'Alex Carlucci', 'Nick Corneau']">
+<!-- declare a class object above accessible only within the body -->
+    <!-- typing in the text field restricts the output shown on the screen depending on matching. Try it yourself! -->
+    Name to search for: <input type="text" ng-model="chosenName"/>
+    <div class="row" ng-repeat="people in class | filter: chosenName">  
+        <!-- iterate through it giving each one its own div and text field -->
+        <div class="col-md-4">
+            This person definetly attended class: <b>{{people | uppercase}}</b>
+            <!-- make the people uppercase -->
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script> 
+</body>
+</html>
+
