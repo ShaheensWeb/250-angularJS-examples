@@ -81,7 +81,7 @@ This repo commenced mid Oct 2015, all creation done by [Shaheen Ghazazani](http:
  	* Covers basics of ng-app, ng-model, and data-binding.
  * [Example 2](https://github.com/ShaheensWeb/250-angularJS-examples/blob/master/example2/index-example2.html)
 	* Covers basics of ng-init, ng-repeat. 
- * [Example 3]()
+ * [Example 3](https://github.com/ShaheensWeb/250-angularJS-examples/blob/master/example3/index-example3.html)
  * [Example 4]()
  * [Example 5]()
  * [Example 6]()
