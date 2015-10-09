@@ -87,7 +87,7 @@ var helloWorldApp = angular.module('demoApp', [])
 ```
 ## The Empty Array in Module Declaration
   * When declaring a module such as angular.module('moduleName', [ ]) this array shown (aka the second parameter) is known as dependency injection. This is because your module may require other modules to get data (very popular in large scale applications). An example of this would be angular.module('catModule', ['catFeedingScheduleModule']); In this case we are using dependency injection to feed catModule the catFeedingScheduleModule. 
-  * Dependency injection is a way to 
+  * Dependency injection is a way to make another module available to one that may require data from that module. Similar to Require.JS or anything more modular based. A very flexible way to dynamically include other modules at run time. 
   
 ## Goals of this repo:
   * Write atleast 250 basic angular.JS apps covering the fundementals, basics, and even some intermediate code snippets.
