@@ -41,6 +41,27 @@ Inspired by [Curran Kelleher](https://github.com/curran/portfolio) repository wi
  	* ng-model="var": A way to bind a variable to a value. In the HTML code snippet above we are using ng-model to bind the value given from the text input to a "favColor" variable. This variable then gets returned in real time via data-binding to {{favColor}}. 
  	* ng-init="Class=['sean', 'james', 'alex', 'daihee']": A way to bind values and hard declare them. 
  	* ng-repeat="people in Class": The main method of iteration in AngularJS. This would allow us to go through the previously declared array of strings and log each name using {{people}}. 
+```html
+<!DOCTYPE html>
+<html ng-app> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Angular.JS - ShaheensWeb - Example #2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+</head>
+<body ng-init="class=['Sean Ghazazani', 'James Mcconnell', 'Daihee Kim', 'Alex Carlucci', 'Nick Corneau']">
+    <!-- declare a class object above accessible only within the body -->
+    <div class="row" ng-repeat="people in class">  
+      <!-- iterate through it giving each one its own div and text field -->
+      <div class="col-md-4">
+        This person definetly attended class: <b>{{people}}</b>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script> 
+    <!-- import angular -->
+</body>
+</html>
+ ```
  
 ## Goals of this repo:
   * Write atleast 250 basic angular.JS apps covering the fundementals, basics, and even some intermediate code snippets.
