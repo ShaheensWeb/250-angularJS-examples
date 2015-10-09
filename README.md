@@ -12,7 +12,7 @@ Inspired by [Curran Kelleher](https://github.com/curran/portfolio) repository wi
   * Where can I get this tool? Download Angular full or minified here: [Angular.JS](http://angularjs.org)
 
 ## AngularJS Concepts
- * Directives
+ * Directives, Data Binding, and Built in Angular.JS Methods 
   * A way to teach HTML new tricks. Some consider Angular.JS to allow us to "bend" i.e create new html attributes. An example of an HTML attribute is the body tag, or div tag, or any built in HTML attribute. Angular allows us to create our own unique attributes with properties we can define, and model. 
   * The first directive you'll see in many Angular apps is: ng-app notice it at the top of example 1 pasted below. 
   ```html
@@ -36,8 +36,11 @@ Inspired by [Curran Kelleher](https://github.com/curran/portfolio) repository wi
 	</body>
 </html>
  ```
- *ng-app: Notify the page that the code within this page is an angular application. Allowing it to prepare itself for whats coming (i.e loading the angular.JS script, etc)
- *ng-model="var": A way to bind a variable to a value. In this code snippet for example one we use this to allow two way data-binding. 
+ ## Directives Cont:
+ 	* ng-app: Notify the page that the code within this page is an angular application. Allowing it to prepare itself for whats coming (i.e loading the angular.JS script first, etc)
+ 	* ng-model="var": A way to bind a variable to a value. In the HTML code snippet above we are using ng-model to bind the value given from the text input to a "favColor" variable. This variable then gets returned in real time via data-binding to {{favColor}}. 
+ 	* ng-init="Class=['sean', 'james', 'alex', 'daihee']": A way to bind values and hard declare them. 
+ 	* ng-repeat="people in Class": The main method of iteration in AngularJS. This would allow us to go through the previously declared array of strings and log each name using {{people}}. 
  
 ## Goals of this repo:
   * Write atleast 250 basic angular.JS apps covering the fundementals, basics, and even some intermediate code snippets.
