@@ -70,7 +70,7 @@ Inspired by [Curran Kelleher](https://github.com/curran/portfolio) repository wi
   * More.. feel free to add
   * 
 
-This repo commenced Oct 2015, all creation done by [Shaheen Ghazazani](http://shaheensweb.me) 
+This repo commenced mid Oct 2015, all creation done by [Shaheen Ghazazani](http://shaheensweb.me) 
 
 ## Examples
  * [Example 1](https://github.com/ShaheensWeb/250-angularJS-examples/blob/master/example1/index-example1.html)
@@ -79,7 +79,7 @@ This repo commenced Oct 2015, all creation done by [Shaheen Ghazazani](http://sh
 	* Covers basics of ng-init, ng-repeat. 
  * [Example 3]()
  * [Example 4]()
- * [Example 3]()
- * [Example 3]()
- * [Example 3]()
- * [Example 3]()
+ * [Example 5]()
+ * [Example 6]()
+ * [Example 7]()
+ * [Example 8]()
