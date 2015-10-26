@@ -107,7 +107,8 @@ This repo commenced mid Oct 2015, all creation done by [Shaheen Ghazazani](http:
  	* Covers ng-init, ng-repeat, and filtering via user input.
  * [Example 4](https://github.com/ShaheensWeb/250-angularJS-examples/tree/master/example4)
  	* Covers basics of modularity, modules, controllers, and $scope.
- * [Example 5]()
+ * [Example 5](https://github.com/ShaheensWeb/250-angularJS-examples/tree/master/example5)
+ 	* Covers using $http as well as $scope to fetch LoL top ranked solo 5x5 players and search them using filters.  
  * [Example 6]()
  * [Example 7]()
  * [Example 8]()
